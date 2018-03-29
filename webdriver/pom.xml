@@ -9,9 +9,12 @@
 
   <groupId>com.xyzq.doit.zfq.example</groupId>
   <artifactId>webdriver</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>webdriver</name>
+  <modules>
+    <module>../tess4j</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,5 +27,12 @@
       <artifactId>selenium-java</artifactId>
       <version>3.11.0</version>
     </dependency>
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>org.seleniumhq.selenium</groupId>-->
+      <!--<artifactId>selenium-server</artifactId>-->
+      <!--<version>3.11.0</version>-->
+    <!--</dependency>-->
+
   </dependencies>
 </project>

@@ -6,3 +6,11 @@ out
 **/out
 **/target
 target
+.project
+.settings
+.classpath
+**.project
+**.settings
+**.classpath
+hs_err**
+/activemq-data/*

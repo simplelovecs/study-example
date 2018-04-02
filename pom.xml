@@ -14,6 +14,7 @@
     <module>mybatis</module>
     <module>jms</module>
     <module>webdriver</module>
+    <module>jna</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -22,7 +23,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
   </properties>
+
 
   <dependencies>
     <dependency>

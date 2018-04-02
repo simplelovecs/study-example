@@ -1,4 +1,4 @@
-package com.xyzq.doit.zfq.example.tess4j;
+package com.xyzq.doit.zfq.example.jna;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;

@@ -22,7 +22,7 @@ public class Sender {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
                 ActiveMQConnection.DEFAULT_USER,
                 ActiveMQConnection.DEFAULT_PASSWORD,
-                "tcp://localhost:61616");
+                "failover:(tcp://localhost:61616)");
 
         connectionFactory.setTrustedPackages(new ArrayList(
                     Arrays.asList("nia,org.apache.camel.test".split(","))));

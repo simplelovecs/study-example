@@ -15,6 +15,10 @@
     <module>jms</module>
     <module>webdriver</module>
     <module>jna</module>
+    <module>springboot</module>
+    <module>aspectj</module>
+    <module>BerkeleyDB</module>
+    <module>hazelcast</module>
   </modules>
   <packaging>pom</packaging>
 

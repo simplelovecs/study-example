@@ -22,10 +22,10 @@ public class Sender {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
                 ActiveMQConnection.DEFAULT_USER,
                 ActiveMQConnection.DEFAULT_PASSWORD,
-                "failover:(tcp://localhost:61616)");
+                "failover:(tcp://localhost:61616,tcp://localhost:61617)");
 
         connectionFactory.setTrustedPackages(new ArrayList(
-                    Arrays.asList("nia,org.apache.camel.test".split(","))));
+                    Arrays.asList("com.xyzq.doit.zfq.example.activemq.entity".split(","))));
 
 
         // Connection ：JMS 客户端到JMS Provider 的连接

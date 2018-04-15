@@ -12,6 +12,8 @@ import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.Session;
 import javax.jms.TextMessage;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Receiver {
@@ -19,12 +21,12 @@ public class Receiver {
     private static ActiveMQConnectionFactory connectionFactory =
             new ActiveMQConnectionFactory(ActiveMQConnection.DEFAULT_USER,
                                           ActiveMQConnection.DEFAULT_PASSWORD,
-                                          "tcp://localhost:61616");
+                                          "failover:(tcp://localhost:61616)?maxReconnectAttempts=0");
 
     {
 
-//        connectionFactory.setTrustedPackages(new ArrayList(
-//                Arrays.asList("nia,org.apache.camel.test".split(","))));
+        connectionFactory.setTrustedPackages(new ArrayList(
+                Arrays.asList("com.xyzq.doit.zfq.example.activemq.entity".split(","))));
 
         connectionFactory.setTrustAllPackages(true);
     }

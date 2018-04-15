@@ -15,6 +15,7 @@ import java.io.InputStream;
 public class AppTest {
 
     public static void main(String[] args) {
+
         File imageFile = new File("/Users/zhengfq/Documents/9D4EB079-5A2D-41B6-B3FB-BE276A0AD9BD.png");
 
         File imageFile2 = new File("/Users/zhengfq/git/study-example/tess4j/testdata/1522279330801.jpg");
@@ -36,7 +37,8 @@ public class AppTest {
                                  System.err.println(readfile.getName() +" result："+  result);
                       }
                  }*/
-            instance.setDatapath("data");
+//            instance.setDatapath("data");
+
             instance.setLanguage("chi_sim"); //加载语言包
             String result = instance.doOCR(imageFile2);
 

@@ -19,6 +19,12 @@
     <module>aspectj</module>
     <module>BerkeleyDB</module>
     <module>hazelcast</module>
+    <module>protobuf</module>
+    <module>grpc</module>
+    <module>atomikos</module>
+    <module>jgroup</module>
+    <module>springgateway</module>
+    <module>javaagent</module>
   </modules>
   <packaging>pom</packaging>
 

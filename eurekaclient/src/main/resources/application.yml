@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: clientAAAA
+server:
+  port: 8082
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

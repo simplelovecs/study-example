@@ -1,0 +1,34 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+#spring:
+#  application:
+#    name: EUREKA-HA
+#  # 指定profile=peer1
+#  profiles: 192.20.169.225
+
+#server:
+#  port: 8761
+#  address: 192.20.169.225
+#
+#eureka:
+#  instance:
+    # 指定当profile=peer1时，主机名是peer1
+    #hostname: peer1
+#    preferIpAddress: true
+#  client:
+#    service-url:
+#      # 将自己注册到peer2、peer3这个Eureka上面去
+#      defaultZone: http://peer2:8762/eureka/,http://peer3:8763/eureka/
+
